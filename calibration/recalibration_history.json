@@ -1,0 +1,66 @@
+{
+  "model": "V200_PerZone_Rolling",
+  "created_at": "2026-02-20T19:55:11Z",
+  "recalibrations": [
+    {
+      "timestamp": "2026-02-20T19:55:11Z",
+      "rolling_window_days": 90,
+      "data_date_range": {
+        "start": "2026-01-25",
+        "end": "2026-02-20"
+      },
+      "total_samples": 60480,
+      "tier_summaries": {
+        "T1_micro": {
+          "n_samples": 15120,
+          "base_rate": 0.081994,
+          "thresholds": {
+            "0.5": 0.966336,
+            "1.0": 0.944333,
+            "2.0": 0.894355,
+            "5.0": 0.808898,
+            "10.0": 0.673397
+          },
+          "changes": "INITIAL"
+        },
+        "T2_felt": {
+          "n_samples": 15120,
+          "base_rate": 0.039062,
+          "thresholds": {
+            "0.5": 0.881359,
+            "1.0": 0.858957,
+            "2.0": 0.82724,
+            "5.0": 0.724635,
+            "10.0": 0.531123
+          },
+          "changes": "INITIAL"
+        },
+        "T3_minor": {
+          "n_samples": 15120,
+          "base_rate": 0.006056,
+          "thresholds": {
+            "0.5": 0.832885,
+            "1.0": 0.809358,
+            "2.0": 0.78733,
+            "5.0": 0.628866,
+            "10.0": 0.159493
+          },
+          "changes": "INITIAL"
+        },
+        "T4_damage": {
+          "n_samples": 15120,
+          "base_rate": 0.00163,
+          "thresholds": {
+            "0.5": 0.784442,
+            "1.0": 0.777051,
+            "2.0": 0.739104,
+            "5.0": 0.605818,
+            "10.0": 0.12368
+          },
+          "changes": "INITIAL"
+        }
+      }
+    }
+  ],
+  "last_updated": "2026-02-20T19:55:11Z"
+}
