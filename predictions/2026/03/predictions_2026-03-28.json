@@ -1,7 +1,7 @@
 {
   "metadata": {
     "prediction_date": "2026-03-28",
-    "generated_at": "2026-03-28T06:24:47Z",
+    "generated_at": "2026-03-28T06:30:25Z",
     "model_version": "V200_PerZone_Rolling",
     "n_zones": 560,
     "tiers": [
