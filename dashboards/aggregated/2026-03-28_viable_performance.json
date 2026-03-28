@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-28T06:27:36Z",
+    "generated_at": "2026-03-28T06:33:03Z",
     "scope": "viable_zones_aggregated",
     "model_version": "V200_PerZone_Rolling",
     "threshold_mode": "per_zone_calibrated",
