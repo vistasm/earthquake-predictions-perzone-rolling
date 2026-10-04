@@ -1,0 +1,1384 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-04T06:32:34Z",
+    "scope": "viable_zones_aggregated",
+    "model_version": "V200_PerZone_Rolling",
+    "threshold_mode": "per_zone_calibrated",
+    "windows": [
+      7,
+      30,
+      90
+    ],
+    "tiers": [
+      "T1_micro",
+      "T2_felt",
+      "T3_minor",
+      "T4_damage"
+    ],
+    "budgets": [
+      "0.5pct",
+      "1.0pct",
+      "2.0pct",
+      "5.0pct",
+      "10.0pct"
+    ],
+    "n_zones": 560,
+    "date_range": {
+      "start": "2026-02-20",
+      "end": "2026-10-01"
+    },
+    "calibration_stats": {
+      "T1_micro": {
+        "zones_calibrated": 0,
+        "zones_fallback": 0
+      },
+      "T2_felt": {
+        "zones_calibrated": 0,
+        "zones_fallback": 0
+      },
+      "T3_minor": {
+        "zones_calibrated": 0,
+        "zones_fallback": 0
+      },
+      "T4_damage": {
+        "zones_calibrated": 0,
+        "zones_fallback": 0
+      }
+    },
+    "n_viable_zones": 560
+  },
+  "summary": {
+    "T1_micro": {
+      "best_budget": "10.0pct",
+      "precision": 0.0577,
+      "recall": 0.161,
+      "f1_score": 0.085,
+      "lift": 0.7,
+      "alert_rate": 0.2297,
+      "n_predictions_30d": 15680,
+      "n_events_30d": 1292
+    },
+    "T2_felt": {
+      "best_budget": "5.0pct",
+      "precision": 0.0291,
+      "recall": 0.1844,
+      "f1_score": 0.0503,
+      "lift": 0.76,
+      "alert_rate": 0.2432,
+      "n_predictions_30d": 15680,
+      "n_events_30d": 602
+    },
+    "T3_minor": {
+      "best_budget": "10.0pct",
+      "precision": 0.0026,
+      "recall": 0.1852,
+      "f1_score": 0.0052,
+      "lift": 0.74,
+      "alert_rate": 0.2513,
+      "n_predictions_30d": 15120,
+      "n_events_30d": 54
+    },
+    "T4_damage": {
+      "best_budget": "0.5pct",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "lift": 0.0,
+      "alert_rate": 0.1401,
+      "n_predictions_30d": 15120,
+      "n_events_30d": 10
+    }
+  },
+  "performance": {
+    "7d": {
+      "T1_micro": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 24,
+            "false_alarms": 534,
+            "misses": 201,
+            "true_negatives": 2041
+          },
+          "metrics": {
+            "precision": 0.043,
+            "recall": 0.1067,
+            "f1_score": 0.0613,
+            "far": 0.2074,
+            "lift": 0.54,
+            "alert_rate": 0.1993
+          },
+          "totals": {
+            "n_predictions": 2800,
+            "n_events": 225,
+            "base_rate": 0.0804
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 24,
+            "false_alarms": 552,
+            "misses": 201,
+            "true_negatives": 2023
+          },
+          "metrics": {
+            "precision": 0.0417,
+            "recall": 0.1067,
+            "f1_score": 0.0599,
+            "far": 0.2144,
+            "lift": 0.52,
+            "alert_rate": 0.2057
+          },
+          "totals": {
+            "n_predictions": 2800,
+            "n_events": 225,
+            "base_rate": 0.0804
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 29,
+            "false_alarms": 688,
+            "misses": 196,
+            "true_negatives": 1887
+          },
+          "metrics": {
+            "precision": 0.0404,
+            "recall": 0.1289,
+            "f1_score": 0.0616,
+            "far": 0.2672,
+            "lift": 0.5,
+            "alert_rate": 0.2561
+          },
+          "totals": {
+            "n_predictions": 2800,
+            "n_events": 225,
+            "base_rate": 0.0804
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 34,
+            "false_alarms": 999,
+            "misses": 191,
+            "true_negatives": 1576
+          },
+          "metrics": {
+            "precision": 0.0329,
+            "recall": 0.1511,
+            "f1_score": 0.0541,
+            "far": 0.388,
+            "lift": 0.41,
+            "alert_rate": 0.3689
+          },
+          "totals": {
+            "n_predictions": 2800,
+            "n_events": 225,
+            "base_rate": 0.0804
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 42,
+            "false_alarms": 1180,
+            "misses": 183,
+            "true_negatives": 1395
+          },
+          "metrics": {
+            "precision": 0.0344,
+            "recall": 0.1867,
+            "f1_score": 0.0581,
+            "far": 0.4583,
+            "lift": 0.43,
+            "alert_rate": 0.4364
+          },
+          "totals": {
+            "n_predictions": 2800,
+            "n_events": 225,
+            "base_rate": 0.0804
+          }
+        }
+      },
+      "T2_felt": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 9,
+            "false_alarms": 231,
+            "misses": 112,
+            "true_negatives": 2448
+          },
+          "metrics": {
+            "precision": 0.0375,
+            "recall": 0.0744,
+            "f1_score": 0.0499,
+            "far": 0.0862,
+            "lift": 0.87,
+            "alert_rate": 0.0857
+          },
+          "totals": {
+            "n_predictions": 2800,
+            "n_events": 121,
+            "base_rate": 0.0432
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 10,
+            "false_alarms": 242,
+            "misses": 111,
+            "true_negatives": 2437
+          },
+          "metrics": {
+            "precision": 0.0397,
+            "recall": 0.0826,
+            "f1_score": 0.0536,
+            "far": 0.0903,
+            "lift": 0.92,
+            "alert_rate": 0.09
+          },
+          "totals": {
+            "n_predictions": 2800,
+            "n_events": 121,
+            "base_rate": 0.0432
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 13,
+            "false_alarms": 259,
+            "misses": 108,
+            "true_negatives": 2420
+          },
+          "metrics": {
+            "precision": 0.0478,
+            "recall": 0.1074,
+            "f1_score": 0.0662,
+            "far": 0.0967,
+            "lift": 1.11,
+            "alert_rate": 0.0971
+          },
+          "totals": {
+            "n_predictions": 2800,
+            "n_events": 121,
+            "base_rate": 0.0432
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 14,
+            "false_alarms": 309,
+            "misses": 107,
+            "true_negatives": 2370
+          },
+          "metrics": {
+            "precision": 0.0433,
+            "recall": 0.1157,
+            "f1_score": 0.0631,
+            "far": 0.1153,
+            "lift": 1.0,
+            "alert_rate": 0.1154
+          },
+          "totals": {
+            "n_predictions": 2800,
+            "n_events": 121,
+            "base_rate": 0.0432
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 26,
+            "false_alarms": 1317,
+            "misses": 95,
+            "true_negatives": 1362
+          },
+          "metrics": {
+            "precision": 0.0194,
+            "recall": 0.2149,
+            "f1_score": 0.0355,
+            "far": 0.4916,
+            "lift": 0.45,
+            "alert_rate": 0.4796
+          },
+          "totals": {
+            "n_predictions": 2800,
+            "n_events": 121,
+            "base_rate": 0.0432
+          }
+        }
+      },
+      "T3_minor": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 171,
+            "misses": 12,
+            "true_negatives": 2057
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0,
+            "far": 0.0768,
+            "lift": 0.0,
+            "alert_rate": 0.0763
+          },
+          "totals": {
+            "n_predictions": 2240,
+            "n_events": 12,
+            "base_rate": 0.0054
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 188,
+            "misses": 12,
+            "true_negatives": 2040
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0,
+            "far": 0.0844,
+            "lift": 0.0,
+            "alert_rate": 0.0839
+          },
+          "totals": {
+            "n_predictions": 2240,
+            "n_events": 12,
+            "base_rate": 0.0054
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 223,
+            "misses": 12,
+            "true_negatives": 2005
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0,
+            "far": 0.1001,
+            "lift": 0.0,
+            "alert_rate": 0.0996
+          },
+          "totals": {
+            "n_predictions": 2240,
+            "n_events": 12,
+            "base_rate": 0.0054
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 2,
+            "false_alarms": 614,
+            "misses": 10,
+            "true_negatives": 1614
+          },
+          "metrics": {
+            "precision": 0.0032,
+            "recall": 0.1667,
+            "f1_score": 0.0064,
+            "far": 0.2756,
+            "lift": 0.61,
+            "alert_rate": 0.275
+          },
+          "totals": {
+            "n_predictions": 2240,
+            "n_events": 12,
+            "base_rate": 0.0054
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 3,
+            "false_alarms": 1011,
+            "misses": 9,
+            "true_negatives": 1217
+          },
+          "metrics": {
+            "precision": 0.003,
+            "recall": 0.25,
+            "f1_score": 0.0058,
+            "far": 0.4538,
+            "lift": 0.55,
+            "alert_rate": 0.4527
+          },
+          "totals": {
+            "n_predictions": 2240,
+            "n_events": 12,
+            "base_rate": 0.0054
+          }
+        }
+      },
+      "T4_damage": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 171,
+            "misses": 0,
+            "true_negatives": 2069
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0,
+            "f1_score": 0,
+            "far": 0.0763,
+            "lift": 0,
+            "alert_rate": 0.0763
+          },
+          "totals": {
+            "n_predictions": 2240,
+            "n_events": 0,
+            "base_rate": 0.0
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 323,
+            "misses": 0,
+            "true_negatives": 1917
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0,
+            "f1_score": 0,
+            "far": 0.1442,
+            "lift": 0,
+            "alert_rate": 0.1442
+          },
+          "totals": {
+            "n_predictions": 2240,
+            "n_events": 0,
+            "base_rate": 0.0
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 368,
+            "misses": 0,
+            "true_negatives": 1872
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0,
+            "f1_score": 0,
+            "far": 0.1643,
+            "lift": 0,
+            "alert_rate": 0.1643
+          },
+          "totals": {
+            "n_predictions": 2240,
+            "n_events": 0,
+            "base_rate": 0.0
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 781,
+            "misses": 0,
+            "true_negatives": 1459
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0,
+            "f1_score": 0,
+            "far": 0.3487,
+            "lift": 0,
+            "alert_rate": 0.3487
+          },
+          "totals": {
+            "n_predictions": 2240,
+            "n_events": 0,
+            "base_rate": 0.0
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 1019,
+            "misses": 0,
+            "true_negatives": 1221
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0,
+            "f1_score": 0,
+            "far": 0.4549,
+            "lift": 0,
+            "alert_rate": 0.4549
+          },
+          "totals": {
+            "n_predictions": 2240,
+            "n_events": 0,
+            "base_rate": 0.0
+          }
+        }
+      }
+    },
+    "30d": {
+      "T1_micro": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 117,
+            "false_alarms": 1950,
+            "misses": 1175,
+            "true_negatives": 12438
+          },
+          "metrics": {
+            "precision": 0.0566,
+            "recall": 0.0906,
+            "f1_score": 0.0697,
+            "far": 0.1355,
+            "lift": 0.69,
+            "alert_rate": 0.1318
+          },
+          "totals": {
+            "n_predictions": 15680,
+            "n_events": 1292,
+            "base_rate": 0.0824
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 122,
+            "false_alarms": 2007,
+            "misses": 1170,
+            "true_negatives": 12381
+          },
+          "metrics": {
+            "precision": 0.0573,
+            "recall": 0.0944,
+            "f1_score": 0.0713,
+            "far": 0.1395,
+            "lift": 0.7,
+            "alert_rate": 0.1358
+          },
+          "totals": {
+            "n_predictions": 15680,
+            "n_events": 1292,
+            "base_rate": 0.0824
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 136,
+            "false_alarms": 2213,
+            "misses": 1156,
+            "true_negatives": 12175
+          },
+          "metrics": {
+            "precision": 0.0579,
+            "recall": 0.1053,
+            "f1_score": 0.0747,
+            "far": 0.1538,
+            "lift": 0.7,
+            "alert_rate": 0.1498
+          },
+          "totals": {
+            "n_predictions": 15680,
+            "n_events": 1292,
+            "base_rate": 0.0824
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 163,
+            "false_alarms": 2799,
+            "misses": 1129,
+            "true_negatives": 11589
+          },
+          "metrics": {
+            "precision": 0.055,
+            "recall": 0.1262,
+            "f1_score": 0.0766,
+            "far": 0.1945,
+            "lift": 0.67,
+            "alert_rate": 0.1889
+          },
+          "totals": {
+            "n_predictions": 15680,
+            "n_events": 1292,
+            "base_rate": 0.0824
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 208,
+            "false_alarms": 3394,
+            "misses": 1084,
+            "true_negatives": 10994
+          },
+          "metrics": {
+            "precision": 0.0577,
+            "recall": 0.161,
+            "f1_score": 0.085,
+            "far": 0.2359,
+            "lift": 0.7,
+            "alert_rate": 0.2297
+          },
+          "totals": {
+            "n_predictions": 15680,
+            "n_events": 1292,
+            "base_rate": 0.0824
+          }
+        }
+      },
+      "T2_felt": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 67,
+            "false_alarms": 3088,
+            "misses": 535,
+            "true_negatives": 11990
+          },
+          "metrics": {
+            "precision": 0.0212,
+            "recall": 0.1113,
+            "f1_score": 0.0357,
+            "far": 0.2048,
+            "lift": 0.55,
+            "alert_rate": 0.2012
+          },
+          "totals": {
+            "n_predictions": 15680,
+            "n_events": 602,
+            "base_rate": 0.0384
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 70,
+            "false_alarms": 3153,
+            "misses": 532,
+            "true_negatives": 11925
+          },
+          "metrics": {
+            "precision": 0.0217,
+            "recall": 0.1163,
+            "f1_score": 0.0366,
+            "far": 0.2091,
+            "lift": 0.57,
+            "alert_rate": 0.2055
+          },
+          "totals": {
+            "n_predictions": 15680,
+            "n_events": 602,
+            "base_rate": 0.0384
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 84,
+            "false_alarms": 3259,
+            "misses": 518,
+            "true_negatives": 11819
+          },
+          "metrics": {
+            "precision": 0.0251,
+            "recall": 0.1395,
+            "f1_score": 0.0426,
+            "far": 0.2161,
+            "lift": 0.65,
+            "alert_rate": 0.2132
+          },
+          "totals": {
+            "n_predictions": 15680,
+            "n_events": 602,
+            "base_rate": 0.0384
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 111,
+            "false_alarms": 3703,
+            "misses": 491,
+            "true_negatives": 11375
+          },
+          "metrics": {
+            "precision": 0.0291,
+            "recall": 0.1844,
+            "f1_score": 0.0503,
+            "far": 0.2456,
+            "lift": 0.76,
+            "alert_rate": 0.2432
+          },
+          "totals": {
+            "n_predictions": 15680,
+            "n_events": 602,
+            "base_rate": 0.0384
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 139,
+            "false_alarms": 5079,
+            "misses": 463,
+            "true_negatives": 9999
+          },
+          "metrics": {
+            "precision": 0.0266,
+            "recall": 0.2309,
+            "f1_score": 0.0478,
+            "far": 0.3368,
+            "lift": 0.69,
+            "alert_rate": 0.3328
+          },
+          "totals": {
+            "n_predictions": 15680,
+            "n_events": 602,
+            "base_rate": 0.0384
+          }
+        }
+      },
+      "T3_minor": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 2,
+            "false_alarms": 2002,
+            "misses": 52,
+            "true_negatives": 13064
+          },
+          "metrics": {
+            "precision": 0.001,
+            "recall": 0.037,
+            "f1_score": 0.0019,
+            "far": 0.1329,
+            "lift": 0.28,
+            "alert_rate": 0.1325
+          },
+          "totals": {
+            "n_predictions": 15120,
+            "n_events": 54,
+            "base_rate": 0.0036
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 2,
+            "false_alarms": 2146,
+            "misses": 52,
+            "true_negatives": 12920
+          },
+          "metrics": {
+            "precision": 0.0009,
+            "recall": 0.037,
+            "f1_score": 0.0018,
+            "far": 0.1424,
+            "lift": 0.26,
+            "alert_rate": 0.1421
+          },
+          "totals": {
+            "n_predictions": 15120,
+            "n_events": 54,
+            "base_rate": 0.0036
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 3,
+            "false_alarms": 2286,
+            "misses": 51,
+            "true_negatives": 12780
+          },
+          "metrics": {
+            "precision": 0.0013,
+            "recall": 0.0556,
+            "f1_score": 0.0026,
+            "far": 0.1517,
+            "lift": 0.37,
+            "alert_rate": 0.1514
+          },
+          "totals": {
+            "n_predictions": 15120,
+            "n_events": 54,
+            "base_rate": 0.0036
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 6,
+            "false_alarms": 2932,
+            "misses": 48,
+            "true_negatives": 12134
+          },
+          "metrics": {
+            "precision": 0.002,
+            "recall": 0.1111,
+            "f1_score": 0.004,
+            "far": 0.1946,
+            "lift": 0.57,
+            "alert_rate": 0.1943
+          },
+          "totals": {
+            "n_predictions": 15120,
+            "n_events": 54,
+            "base_rate": 0.0036
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 10,
+            "false_alarms": 3790,
+            "misses": 44,
+            "true_negatives": 11276
+          },
+          "metrics": {
+            "precision": 0.0026,
+            "recall": 0.1852,
+            "f1_score": 0.0052,
+            "far": 0.2516,
+            "lift": 0.74,
+            "alert_rate": 0.2513
+          },
+          "totals": {
+            "n_predictions": 15120,
+            "n_events": 54,
+            "base_rate": 0.0036
+          }
+        }
+      },
+      "T4_damage": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 2118,
+            "misses": 10,
+            "true_negatives": 12992
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0,
+            "far": 0.1402,
+            "lift": 0.0,
+            "alert_rate": 0.1401
+          },
+          "totals": {
+            "n_predictions": 15120,
+            "n_events": 10,
+            "base_rate": 0.0007
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 2326,
+            "misses": 10,
+            "true_negatives": 12784
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0,
+            "far": 0.1539,
+            "lift": 0.0,
+            "alert_rate": 0.1538
+          },
+          "totals": {
+            "n_predictions": 15120,
+            "n_events": 10,
+            "base_rate": 0.0007
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 2465,
+            "misses": 10,
+            "true_negatives": 12645
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0,
+            "far": 0.1631,
+            "lift": 0.0,
+            "alert_rate": 0.163
+          },
+          "totals": {
+            "n_predictions": 15120,
+            "n_events": 10,
+            "base_rate": 0.0007
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 3170,
+            "misses": 10,
+            "true_negatives": 11940
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0,
+            "far": 0.2098,
+            "lift": 0.0,
+            "alert_rate": 0.2097
+          },
+          "totals": {
+            "n_predictions": 15120,
+            "n_events": 10,
+            "base_rate": 0.0007
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 0,
+            "false_alarms": 3860,
+            "misses": 10,
+            "true_negatives": 11250
+          },
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0,
+            "far": 0.2555,
+            "lift": 0.0,
+            "alert_rate": 0.2553
+          },
+          "totals": {
+            "n_predictions": 15120,
+            "n_events": 10,
+            "base_rate": 0.0007
+          }
+        }
+      }
+    },
+    "90d": {
+      "T1_micro": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 421,
+            "false_alarms": 4520,
+            "misses": 3780,
+            "true_negatives": 40559
+          },
+          "metrics": {
+            "precision": 0.0852,
+            "recall": 0.1002,
+            "f1_score": 0.0921,
+            "far": 0.1003,
+            "lift": 1.0,
+            "alert_rate": 0.1003
+          },
+          "totals": {
+            "n_predictions": 49280,
+            "n_events": 4201,
+            "base_rate": 0.0852
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 442,
+            "false_alarms": 4664,
+            "misses": 3759,
+            "true_negatives": 40415
+          },
+          "metrics": {
+            "precision": 0.0866,
+            "recall": 0.1052,
+            "f1_score": 0.095,
+            "far": 0.1035,
+            "lift": 1.02,
+            "alert_rate": 0.1036
+          },
+          "totals": {
+            "n_predictions": 49280,
+            "n_events": 4201,
+            "base_rate": 0.0852
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 490,
+            "false_alarms": 4995,
+            "misses": 3711,
+            "true_negatives": 40084
+          },
+          "metrics": {
+            "precision": 0.0893,
+            "recall": 0.1166,
+            "f1_score": 0.1012,
+            "far": 0.1108,
+            "lift": 1.05,
+            "alert_rate": 0.1113
+          },
+          "totals": {
+            "n_predictions": 49280,
+            "n_events": 4201,
+            "base_rate": 0.0852
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 613,
+            "false_alarms": 6005,
+            "misses": 3588,
+            "true_negatives": 39074
+          },
+          "metrics": {
+            "precision": 0.0926,
+            "recall": 0.1459,
+            "f1_score": 0.1133,
+            "far": 0.1332,
+            "lift": 1.09,
+            "alert_rate": 0.1343
+          },
+          "totals": {
+            "n_predictions": 49280,
+            "n_events": 4201,
+            "base_rate": 0.0852
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 762,
+            "false_alarms": 7347,
+            "misses": 3439,
+            "true_negatives": 37732
+          },
+          "metrics": {
+            "precision": 0.094,
+            "recall": 0.1814,
+            "f1_score": 0.1238,
+            "far": 0.163,
+            "lift": 1.1,
+            "alert_rate": 0.1645
+          },
+          "totals": {
+            "n_predictions": 49280,
+            "n_events": 4201,
+            "base_rate": 0.0852
+          }
+        }
+      },
+      "T2_felt": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 227,
+            "false_alarms": 5512,
+            "misses": 1697,
+            "true_negatives": 41844
+          },
+          "metrics": {
+            "precision": 0.0396,
+            "recall": 0.118,
+            "f1_score": 0.0592,
+            "far": 0.1164,
+            "lift": 1.01,
+            "alert_rate": 0.1165
+          },
+          "totals": {
+            "n_predictions": 49280,
+            "n_events": 1924,
+            "base_rate": 0.039
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 240,
+            "false_alarms": 5655,
+            "misses": 1684,
+            "true_negatives": 41701
+          },
+          "metrics": {
+            "precision": 0.0407,
+            "recall": 0.1247,
+            "f1_score": 0.0614,
+            "far": 0.1194,
+            "lift": 1.04,
+            "alert_rate": 0.1196
+          },
+          "totals": {
+            "n_predictions": 49280,
+            "n_events": 1924,
+            "base_rate": 0.039
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 274,
+            "false_alarms": 5912,
+            "misses": 1650,
+            "true_negatives": 41444
+          },
+          "metrics": {
+            "precision": 0.0443,
+            "recall": 0.1424,
+            "f1_score": 0.0676,
+            "far": 0.1248,
+            "lift": 1.13,
+            "alert_rate": 0.1255
+          },
+          "totals": {
+            "n_predictions": 49280,
+            "n_events": 1924,
+            "base_rate": 0.039
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 346,
+            "false_alarms": 6774,
+            "misses": 1578,
+            "true_negatives": 40582
+          },
+          "metrics": {
+            "precision": 0.0486,
+            "recall": 0.1798,
+            "f1_score": 0.0765,
+            "far": 0.143,
+            "lift": 1.24,
+            "alert_rate": 0.1445
+          },
+          "totals": {
+            "n_predictions": 49280,
+            "n_events": 1924,
+            "base_rate": 0.039
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 420,
+            "false_alarms": 8807,
+            "misses": 1504,
+            "true_negatives": 38549
+          },
+          "metrics": {
+            "precision": 0.0455,
+            "recall": 0.2183,
+            "f1_score": 0.0753,
+            "far": 0.186,
+            "lift": 1.17,
+            "alert_rate": 0.1872
+          },
+          "totals": {
+            "n_predictions": 49280,
+            "n_events": 1924,
+            "base_rate": 0.039
+          }
+        }
+      },
+      "T3_minor": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 45,
+            "false_alarms": 4914,
+            "misses": 243,
+            "true_negatives": 43518
+          },
+          "metrics": {
+            "precision": 0.0091,
+            "recall": 0.1562,
+            "f1_score": 0.0172,
+            "far": 0.1015,
+            "lift": 1.54,
+            "alert_rate": 0.1018
+          },
+          "totals": {
+            "n_predictions": 48720,
+            "n_events": 288,
+            "base_rate": 0.0059
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 46,
+            "false_alarms": 5153,
+            "misses": 242,
+            "true_negatives": 43279
+          },
+          "metrics": {
+            "precision": 0.0088,
+            "recall": 0.1597,
+            "f1_score": 0.0168,
+            "far": 0.1064,
+            "lift": 1.5,
+            "alert_rate": 0.1067
+          },
+          "totals": {
+            "n_predictions": 48720,
+            "n_events": 288,
+            "base_rate": 0.0059
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 49,
+            "false_alarms": 5469,
+            "misses": 239,
+            "true_negatives": 42963
+          },
+          "metrics": {
+            "precision": 0.0089,
+            "recall": 0.1701,
+            "f1_score": 0.0169,
+            "far": 0.1129,
+            "lift": 1.5,
+            "alert_rate": 0.1133
+          },
+          "totals": {
+            "n_predictions": 48720,
+            "n_events": 288,
+            "base_rate": 0.0059
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 61,
+            "false_alarms": 6602,
+            "misses": 227,
+            "true_negatives": 41830
+          },
+          "metrics": {
+            "precision": 0.0092,
+            "recall": 0.2118,
+            "f1_score": 0.0176,
+            "far": 0.1363,
+            "lift": 1.55,
+            "alert_rate": 0.1368
+          },
+          "totals": {
+            "n_predictions": 48720,
+            "n_events": 288,
+            "base_rate": 0.0059
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 70,
+            "false_alarms": 8256,
+            "misses": 218,
+            "true_negatives": 40176
+          },
+          "metrics": {
+            "precision": 0.0084,
+            "recall": 0.2431,
+            "f1_score": 0.0163,
+            "far": 0.1705,
+            "lift": 1.42,
+            "alert_rate": 0.1709
+          },
+          "totals": {
+            "n_predictions": 48720,
+            "n_events": 288,
+            "base_rate": 0.0059
+          }
+        }
+      },
+      "T4_damage": {
+        "0.5pct": {
+          "confusion_matrix": {
+            "hits": 8,
+            "false_alarms": 5096,
+            "misses": 65,
+            "true_negatives": 43551
+          },
+          "metrics": {
+            "precision": 0.0016,
+            "recall": 0.1096,
+            "f1_score": 0.0031,
+            "far": 0.1048,
+            "lift": 1.05,
+            "alert_rate": 0.1048
+          },
+          "totals": {
+            "n_predictions": 48720,
+            "n_events": 73,
+            "base_rate": 0.0015
+          }
+        },
+        "1.0pct": {
+          "confusion_matrix": {
+            "hits": 8,
+            "false_alarms": 5395,
+            "misses": 65,
+            "true_negatives": 43252
+          },
+          "metrics": {
+            "precision": 0.0015,
+            "recall": 0.1096,
+            "f1_score": 0.0029,
+            "far": 0.1109,
+            "lift": 0.99,
+            "alert_rate": 0.1109
+          },
+          "totals": {
+            "n_predictions": 48720,
+            "n_events": 73,
+            "base_rate": 0.0015
+          }
+        },
+        "2.0pct": {
+          "confusion_matrix": {
+            "hits": 8,
+            "false_alarms": 5713,
+            "misses": 65,
+            "true_negatives": 42934
+          },
+          "metrics": {
+            "precision": 0.0014,
+            "recall": 0.1096,
+            "f1_score": 0.0028,
+            "far": 0.1174,
+            "lift": 0.93,
+            "alert_rate": 0.1174
+          },
+          "totals": {
+            "n_predictions": 48720,
+            "n_events": 73,
+            "base_rate": 0.0015
+          }
+        },
+        "5.0pct": {
+          "confusion_matrix": {
+            "hits": 10,
+            "false_alarms": 6950,
+            "misses": 63,
+            "true_negatives": 41697
+          },
+          "metrics": {
+            "precision": 0.0014,
+            "recall": 0.137,
+            "f1_score": 0.0028,
+            "far": 0.1429,
+            "lift": 0.96,
+            "alert_rate": 0.1429
+          },
+          "totals": {
+            "n_predictions": 48720,
+            "n_events": 73,
+            "base_rate": 0.0015
+          }
+        },
+        "10.0pct": {
+          "confusion_matrix": {
+            "hits": 12,
+            "false_alarms": 8448,
+            "misses": 61,
+            "true_negatives": 40199
+          },
+          "metrics": {
+            "precision": 0.0014,
+            "recall": 0.1644,
+            "f1_score": 0.0028,
+            "far": 0.1737,
+            "lift": 0.95,
+            "alert_rate": 0.1736
+          },
+          "totals": {
+            "n_predictions": 48720,
+            "n_events": 73,
+            "base_rate": 0.0015
+          }
+        }
+      }
+    }
+  }
+}
